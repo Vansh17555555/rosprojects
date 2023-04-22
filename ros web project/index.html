@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            margin:auto;
+            padding:auto;
+        }
+        body {
+            align-items: center;
+            padding:2px;
+        }
+        header { 
+           
+            width: 100%;
+    height: 2vh;
+    margin: auto;
+    display: flex;
+    align-items:center;
+        }   
+
+        nav {
+    height: 50px;
+    display:flex;
+    margin-bottom: 50px;
+    
+}
+
+nav ul {
+  padding: 0;
+  list-style-type:none;
+  flex: 2;
+  display:inline;
+}
+
+nav li {
+    margin-right: 12px;
+    text-transform:bold;
+    font-size:20px;
+    font: bold;
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+}
+li h4{
+    position:relative;
+    left:-4px;
+    background-color: rgb(148, 108, 174);
+    width:30px;
+    padding-right:100px;
+    padding-top:18px;
+    padding-bottom: 18px;
+    margin-right:100px;
+    position: relative;
+    bottom:3px;
+}
+nav a {
+    margin-right:20px;
+  display: inline-block;
+  font-family: cursive;
+  font-size: 2rem;
+  text-transform:bold;
+  text-decoration: none;
+  color:white;
+}
+nav a::after {
+    background-color:rgb(148, 108, 174);
+}
+ #assa{
+    background-color:white;
+    position:relative;
+    right:45px;
+    height:30px;
+    width:400px;
+
+ }
+#assa2{
+    background-color:white;
+    max-width:fit-content;
+    position: relative;
+    right:30px;
+
+}
+table {
+    border:70px black;
+}
+tr h3{
+    color:white;
+    text-transform: uppercase;
+    margin:10px;
+}
+.airing {
+    color: white;
+    float:left;
+    max-width: fit-content;
+    height:330px;
+    width:auto;
+    overflow:hidden;
+    object-fit: cover;
+    text-align: center;
+    text-decoration: solid;
+}
+.airing td{
+    background: black;
+    font-family: cursive;
+    text-align: center;
+    color:white;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:black;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+        <ul>
+            <li><h4 style="background-color:white;">Munchstone</li>
+            <li><a href=" ">Home    </a></li>
+            <li><a href=" ">   Your List</a></li>
+            <li><a href="" >     Genre</a></li>
+            <li><a href="">     Feedback</a></li>
+            <li><a href="" >     About</a></li>
+        </ul>
+        <form>
+            <input type="search" id="assa"  placeholder="search">
+            <input type="submit" id="assa2" value="🔍">
+        </form>
+        
+    </nav>
+<main>
+    <table>
+        <tr><td colspan="8"><h3>currently airing</h3></td></tr>
+        <tr class="airing">
+                <td><a href="https://www.google.com/search?q=succession&rlz=1C1ONGR_enIN1040IN1040&oq=succession&aqs=chrome.0.0i271j46i131i433i512j0i20i131i263i433i512j0i433i512l4j0i512l3.1951j0j7&sourceid=chrome&ie=UTF-8"><img src="download.jpg"></a><br>succesion</td>
+                <td><a href="https://www.google.com/search?q=barry&source=lmns&bih=731&biw=1536&client=firefox-b-d&hl=en&sa=X&ved=2ahUKEwjN8NCvtr3-AhXkynMBHVohAsMQ_AUoAHoECAEQAA"><img src="barry.jpg"></a><br>Barry</td>
+                <td><a href="https://www.google.com/search?q=suzume&client=firefox-b-d&bih=731&biw=1536&hl=en&sxsrf=APwXEddSwwbLvLQ8aLcMs_OQVD0bL3WqNg%3A1682164314868&ei=WspDZNrNNN2tseMPuMiCyA0&ved=0ahUKEwja4sOztr3-AhXdVmwGHTikANkQ4dUDCA8&uact=5&oq=suzume&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCC4QgwEQsQMQgAQyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCKBRCxAxCDATILCAAQigUQsQMQgwEyFgguEIMBELEDEIAEENwEEN4EEOAEGAM6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoSCC4QigUQ1AIQyAMQsAMQQxgCOgQIIxAnOg0ILhCKBRCxAxCDARBDOgcIABCKBRBDOg0IABCKBRCxAxCDARBDOgcILhCKBRBDOg0ILhCABBAUEIcCELEDOggIABCABBCxAzoYCC4QigUQsQMQgwEQQxDcBBDeBBDgBBgDOgcIIxDqAhAnOg8ILhCKBRDqAhC0AhBDGAQ6DwgAEIoFEOoCELQCEEMYBDoSCC4QigUQ1AIQ6gIQtAIQQxgEOgoILhCKBRDUAhBDOgoILhCKBRCxAxBDOg4ILhCABBCxAxDHARDRAzoFCAAQgAQ6CggAEIoFELEDEENKBAhBGABQiwNY-hVg9RxoAnABeAOAAbYCiAGeEZIBBzAuMy42LjGYAQCgAQGwARTIARLAAQHaAQYIARABGAnaAQYIAhABGAjaAQYIAxABGBTaAQYIBBABGAE&sclient=gws-wiz-serp"><img src="suzume.jpg"></a><br>Suzume No Tajimari</td>
+                <td><a href="https://www.google.com/search?q=john+wick+4&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEde2mDd_mF2YNB-_dYKVjVMuyNOVxA%3A1682164220204&ei=_MlDZKKHDO-sseMPg5SDgAo&gs_ssp=eJzj4tVP1zc0zDDMjjewKKk0YPTizsrPyFMoz0zOVjABAHWICE4&oq=john+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMg0ILhCKBRCxAxDUAhBDMgoILhCKBRCxAxBDMgcILhCKBRBDMgcILhCKBRBDMgcILhCKBRBDMg0ILhCKBRCxAxDUAhBDMg0ILhCKBRCxAxDUAhBDMgcILhCKBRBDMgcIABCKBRBDMgoILhCKBRDUAhBDMhUILhCKBRCxAxBDENwEEN0EEOAEGAQ6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoECCMQJzoNCAAQigUQsQMQgwEQQzoKCAAQigUQsQMQQzoLCC4QgwEQsQMQgAQ6BwgjEOoCECc6DwgAEIoFEOoCELQCEEMYAzoPCC4QigUQ6gIQtAIQQxgDOhIILhCKBRDUAhDqAhC0AhBDGAM6CwgAEIAEELEDEIMBOgsILhCABBCxAxCDAToFCAAQgAQ6GAguEIoFELEDENQCEEMQ3AQQ3gQQ4AQYBDoYCC4QigUQsQMQ1AIQQxDcBBDdBBDgBBgESgQIQRgAUO4CWLvoBGDB9gRoA3ABeASAAeoBiAGmEpIBBTAuMi45mAEAoAEBsAEUyAETwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgB2gEGCAQQARgU&sclient=gws-wiz-serp"><img src="john wock.jpg"><br></a>John Wick 4</td>
+                <td><a href="https://www.google.com/search?q=super+mario&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdcqGe4J9vKxtUoAZ7VStqEYilRaIw%3A1682164420825&ei=xMpDZKmDMr3WseMP1aqFoAE&ved=0ahUKEwip9Ybmtr3-AhU9a2wGHVVVARQQ4dUDCBA&uact=5&oq=super+mario&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIQCC4QgwEQ1AIQsQMQigUQQzIQCC4QgwEQ1AIQsQMQigUQQzINCAAQigUQsQMQgwEQQzIQCC4QgwEQ1AIQsQMQigUQQzINCAAQigUQsQMQgwEQQzIQCC4QigUQsQMQgwEQ1AIQQzIQCC4QgwEQ1AIQsQMQigUQQzIKCAAQigUQsQMQQzILCAAQgAQQsQMQgwEyCwgAEIoFELEDEIMBMhsILhCDARDUAhCxAxCKBRBDENwEEN4EEOAEGAI6BwgjEOoCECc6BwguEOoCECc6DwgAEIoFEOoCELQCEEMYAToSCC4QigUQ1AIQ6gIQtAIQQxgBOg8ILhCKBRDqAhC0AhBDGAE6BAgjECc6BwguEIoFEEM6CwguEIoFELEDEIMBOg0ILhCDARCxAxCKBRBDOgcIABCKBRBDOgoILhCKBRDUAhBDOg0ILhCKBRDHARDRAxBDOggILhCABBCxAzoICAAQgAQQsQNKBAhBGABQ5wFY3hJg3RdoAXABeACAAYQCiAHeEpIBBjAuMS4xMJgBAKABAbABFMABAdoBBggBEAEYAdoBBggCEAEYFA&sclient=gws-wiz-serp"><img src=" super mario.jpg"></a><br>Super Mario</td>
+                <td><a href="https://www.google.com/search?q=ousama+ranking&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdeQ55KYa7ptPJRSEJ9FLV4aMRJiGQ%3A1682164452255&ei=5MpDZKvoDsflseMPssK6wAE&oq=ousma+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0IABCKBRCxAxCDARBDMg0IABCABBCxAxCDARAKMg0IABCABBCxAxCDARAKMgcIABCABBAKMhAILhCDARDUAhCxAxCKBRBDMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgoILhDUAhCABBAKMgcIABCABBAKOgcIIxDqAhAnOgcILhDqAhAnOg8ILhCKBRDqAhC0AhBDGAE6EgguEIoFENQCEOoCELQCEEMYAToPCAAQigUQ6gIQtAIQQxgBOhIILhDUAhCKBRDqAhC0AhBDGAE6BAgjECc6CAguEIoFEJECOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6DgguEIAEELEDEMcBENEDOgcILhCKBRBDOgcIABCKBRBDOhIILhCKBRBDENwEEN4EEOAEGAI6CgguEIoFELEDEEM6CAgAEIAEELEDOgUIABCABDoVCC4QigUQsQMQQxDcBBDeBBDfBBgCOgoILhCxAxCKBRBDOgUILhCABDoVCC4QsQMQigUQQxDcBBDeBBDfBBgCSgQIQRgAUIcEWIULYK8ZaAFwAXgAgAHnAYgBogqSAQMyLTaYAQCgAQGwARTAAQHaAQYIARABGAHaAQYIAhABGBQ&sclient=gws-wiz-serp"><img src="ousma ranking.jpg"></a><br>Ousama Ranking</td>   
+                <td><a href="https://www.google.com/search?q=vinland+saga&tbm=isch&ved=2ahUKEwj30N-yt73-AhX8FLcAHT3cDk8Q2-cCegQIABAA&oq=vinland+saga&gs_lcp=CgNpbWcQAzIECCMQJzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzoLCAAQgAQQsQMQgwE6BQgAEIAEOgkIABAYEIAEEApQ9gNYtRhgshxoAXAAeACAAcMEiAG-DZIBCTAuNC4yLjUtMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=ZctDZLeKKPyp3LUPvbi7-AQ&bih=731&biw=1536&client=firefox-b-d&hl=en"><img src="Vinland saga.jpg"></a><br>Vinland Saga</td>
+                <td><a href="https://www.google.com/search?q=lucky+hank+bob+odenkirk&client=firefox-b-d&bih=731&biw=1536&hl=en&sxsrf=APwXEdc1gBnEnJ9zxLyEZWtoY421wNf85Q%3A1682164673330&ei=wctDZM3iE72TseMPjNa96AU&oq=lucky+rank+bob&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMggIABAIEB4QDToKCAAQRxDWBBCwAzoGCAAQFhAeOggIABCKBRCGA0oECEEYAFCCA1j0CWDpE2gBcAF4AIAB6QGIAdYGkgEFMC4xLjOYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp"><img src="lucky rank.jpg"></a><br>lucky hank</td>
+            </tr>
+       <tr><td colspan="8"><h3 style="color:white">top in action</h3></td></tr>
+       <tr class="airing">
+        <td><a href="https://www.google.com/search?q=nobody&client=firefox-b-d&bih=731&biw=1536&hl=en&sxsrf=APwXEddyEbgaqxqrzX5RtHBu5OPiF4M0pw%3A1682164681598&ei=yctDZKL1I9aVseMPrKq9mA8&gs_ssp=eJzj4tVP1zc0TCvMrjA0Ti43YPRiy8tPyk-pBABTUwdD&oq=nobody&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0ILhCDARCxAxCKBRBDMg0ILhCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgUIABCABDIHCAAQigUQQzIHCC4QigUQQzIFCAAQgAQyCAguEIAEENQCMhgILhCDARCxAxCKBRBDENwEEN0EEOAEGAQ6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoSCC4QigUQ1AIQyAMQsAMQQxgCOgQIIxAnOgYIABAWEB46BwgjEOoCECc6BwguEOoCECc6DwgAEIoFEOoCELQCEEMYAzoLCAAQgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDOg4ILhCABBCxAxDHARDRAzoLCC4QgAQQsQMQ5QQ6CAgAEIAEELEDOhgILhCDARCxAxCKBRBDENwEEN4EEOAEGARKBAhBGABQgQNYrK8BYIC6AWgEcAF4BIABmgKIAeYTkgEGMC4xLjEwmAEAoAEBsAEUyAETwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgB2gEGCAQQARgU&sclient=gws-wiz-serp"><img src="Nobody.jpg"></a><br>Nobody</td>
+        <td><a href="https://www.google.com/search?q=fight+club&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEddWtqAQv5wynyeJMxOJB_OH3MMigg%3A1682164900108&ei=pMxDZKabBoDhseMPpP6T6A0&ved=0ahUKEwim_cvKuL3-AhWAcGwGHST_BN0Q4dUDCBA&uact=5&oq=fight+club&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCC4QsQMQigUQQzIFCC4QgAQyCAgAEIAEELEDMggIABCABBCxAzIICC4QsQMQgAQyCwgAEIAEELEDEIMBMgUIABCABDILCC4QgAQQsQMQ1AIyBQgAEIAEMggIABCABBCxAzIVCC4QsQMQigUQQxDcBBDeBBDgBBgCOgcIIxDqAhAnOgcILhDqAhAnOg8ILhCKBRDqAhC0AhBDGAE6DwgAEIoFEOoCELQCEEMYAToECCMQJzoRCC4QgAQQsQMQgwEQxwEQ0QM6DgguEIAEELEDEIMBENQCOg4ILhCDARDUAhCxAxCABDoHCAAQigUQQzoHCC4QigUQQzoKCC4QigUQsQMQQzoKCC4QigUQ1AIQQzoICC4QgAQQsQM6FQguEIoFELEDEEMQ3AQQ3gQQ4AQYAjoICAAQigUQsQNKBAhBGABQmgpYlxtgjR5oAXABeACAAYYCiAGsEZIBBTAuMi44mAEAoAEBsAEUwAEB2gEGCAEQARgB2gEGCAIQARgU&sclient=gws-wiz-serp"><img src="fight club.jpg"></a><br>Fight Club</td>
+        <td><a href="https://www.google.com/search?q=the+boys&source=lmns&bih=714&biw=1536&rlz=1C1ONGR_enIN1040IN1040&hl=en&sa=X&ved=2ahUKEwiP5MbLuL3-AhVd1XMBHTSqCCQQ_AUoAHoECAEQAA"><img src="the boys.jpg"></a><br>The Boys</td>
+        <td><a href="https://www.google.com/search?q=kingsman+3&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdd53Eh9wisPa5GwiFVzHJDw1lkWBA%3A1682165071701&ei=T81DZIO3KuzUseMPjfGqSA&ved=0ahUKEwjDmrWcub3-AhVsamwGHY24CgkQ4dUDCBA&uact=5&oq=kingsman+3&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzINCAAQ5AIQ1gQQsAMYATINCAAQ5AIQ1gQQsAMYATINCAAQ5AIQ1gQQsAMYATIPCC4QigUQyAMQsAMQQxgCMg8ILhCKBRDIAxCwAxBDGAIyDwguEIoFEMgDELADEEMYAjIPCC4QigUQyAMQsAMQQxgCOgQIABBHOgcILhCABBAKOgcIABCABBAKOgYIABAeEAo6BAgAEB46CwgAEAUQHhDxBBAKOgYIABAIEB46EgguEIAEEAoQ3AQQ3gQQ4AQYA0oECEEYAFAnWPUaYKsdaAFwAngAgAHeAYgBqgOSAQMyLTKYAQCgAQHIAQ_AAQHaAQYIARABGAnaAQYIAhABGAjaAQYIAxABGBQ&sclient=gws-wiz-serp"><img src="kingsman 3.jpg"></a><br>Kingsman 3</td>
+        <td><a href="https://www.google.com/search?q=gintama&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdenegAhGPgM11ll1LDH4MMjGEBl6Q%3A1682165081042&ei=Wc1DZKqQAqKhseMPtvqI0AQ&gs_ssp=eJzj4tLP1Tcoz0ipSssyYPRiT8_MK0nMTQQASrEHAA&oq=gintma&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMhEILhCDARDUAhCxAxCKBRCRAjIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCC4QigUQQzIHCC4QigUQQzIKCC4QigUQ1AIQQzIKCAAQgAQQsQMQCjIcCC4QgwEQ1AIQsQMQigUQkQIQ3AQQ3gQQ4AQYAjoHCCMQ6gIQJzoHCC4Q6gIQJzoPCC4QigUQ6gIQtAIQQxgBOg8IABCKBRDqAhC0AhBDGAE6BAgjECc6DQgAEIoFELEDEIMBEEM6CgguEMcBENEDECc6DQguEIoFELEDEIMBEEM6EwguEMcBENEDENwEEN4EEOAEGAI6CggAEIoFELEDEEM6CgguEIoFELEDEEM6CwguEIAEELEDEIMBOgsILhCABBDHARCvAToICC4QsQMQgAQ6CAgAEIAEELEDSgQIQRgAULUBWNEVYN4kaAJwAXgBgAGJBYgB5A6SAQkwLjIuNC41LTGYAQCgAQGwARTAAQHaAQYIARABGAHaAQYIAhABGBQ&sclient=gws-wiz-serp"><img src="gintama.jpg"></a><br>Gintama</td>
+        <td><a href="https://www.google.com/search?q=spiderman+into+the+spider+verse&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdc8_TEoy_xm0RslTto4I-Il1sIp5A%3A1682165271680&ei=F85DZKGZKabw4-EPv5GesAs&gs_ssp=eJzj4tVP1zc0TDevSqswSTI1YPSSLy7ITEktyk3MU8jMK8lXKMlIVYAIKZSlFhWnAgB7gRCE&oq=spiderman+int&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMg4ILhCDARDUAhCxAxCABDILCC4QgwEQsQMQgAQyDgguEIAEELEDEIMBENQCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIZCC4QgwEQ1AIQsQMQgAQQ3AQQ3QQQ4AQYAjoHCC4Q6gIQJzoHCCMQ6gIQJzoPCAAQigUQ6gIQtAIQQxgBOhIILhDUAhCKBRDqAhC0AhBDGAE6DwguEIoFEOoCELQCEEMYAToSCC4QigUQ1AIQ6gIQtAIQQxgBOgQIIxAnOgoILhCKBRDUAhBDOgcIABCKBRBDOgcILhCKBRBDOhAILhCDARDUAhCxAxCKBRBDOg0IABCKBRCxAxCDARBDOgoIABCKBRCxAxBDOgUILhCABDoTCC4QgAQQsQMQgwEQxwEQ0QMQCjoHCC4QgAQQCjoLCC4QgAQQxwEQrwE6EAguEIAEENwEEN4EEOAEGAI6CgguEIoFELEDEEM6CwguEIMBELEDEIoFOg4ILhCKBRCxAxCDARDUAjoQCC4QigUQsQMQgwEQ1AIQQzoLCAAQigUQsQMQgwE6CAguEIAEELEDOg4ILhCKBRCxAxCDARCRAjoICAAQgAQQsQM6DQgAEIoFELEDEIMBEAo6CwgAEIAEELEDEIMBOggIABCKBRCxAzoZCC4QigUQsQMQgwEQkQIQ3AQQ3gQQ4AQYAjoHCAAQgAQQCjoLCC4Q1AIQsQMQgAQ6GQguEIMBENQCELEDEIAEENwEEN4EEOAEGAI6FgguEIMBELEDEIAEENwEEN0EEOAEGAJKBAhBGABQ-gNYxS1gwEpoAnABeAGAAcUCiAHYGJIBCDAuMy4xMC4xmAEAoAEBsAEUwAEB2gEGCAEQARgB2gEGCAIQARgU&sclient=gws-wiz-serp"><img src="spdierman.jpg"></a><br>Spiderman</td>
+        <td><a href="https://www.google.com/search?q=86&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdeiGM1jA4bnrecO0slOOve1NH1ZRQ%3A1682165303424&ei=N85DZMnKGaXv4-EP57SGsAE&ved=0ahUKEwiJwvSKur3-AhWl9zgGHWeaARYQ4dUDCBA&uact=5&oq=86&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQigUQkQIyBwgAEIoFEEMyBwgAEIoFEEMyCwgAEIoFELEDEJECMgcIABCKBRBDMgsILhDUAhCxAxCABDIFCAAQgAQyCwgAEIAEELEDEIMBMgUIABCABDILCC4QgAQQsQMQ1AI6BwguEOoCECc6BwgjEOoCECc6DwguEIoFEOoCELQCEEMYAToPCAAQigUQ6gIQtAIQQxgBOg0IABCPARDqAhC0AhgCOggILhCKBRCRAjoLCC4QgwEQsQMQgAQ6CwguEIAEELEDEIMBOggILhCABBCxAzoLCAAQigUQsQMQgwE6BQguEIAEOggIABCABBCxA0oECEEYAFDoBljhCmC1EGgBcAF4AIAB2wGIAbYDkgEDMi0ymAEAoAEBsAEUwAEB2gEGCAEQARgB2gEGCAIQARgK&sclient=gws-wiz-serp"><img src="86.jpg"></a><br>86</td>
+        <td><a href="https://www.google.com/search?q=hunter+x+hunter&rlz=1C1ONGR_enIN1040IN1040&sxsrf=APwXEdcMc6vLZnQzFaC2N7gcr3a2b0kH8g%3A1682165322877&ei=Ss5DZJeZNeTH4-EPicqG4Ac&gs_ssp=eJzj4tLP1TcwMaiKzzM2YPTizyjNK0ktUqhQgDAAf98JXA&oq=huntt&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMhAILhCKBRCxAxCDARDUAhBDMhAILhCKBRCxAxCDARDUAhBDMgsILhCABBDHARCvATIKCAAQgAQQsQMQCjIKCAAQgAQQyQMQCjIICAAQigUQkgMyCggAEIAEELEDEAoyBwgAEIAEEAoyDQgAEIAEELEDEIMBEAoyCgguEIAEELEDEAoyGwguEIoFELEDEIMBENQCEEMQ3AQQ3QQQ4AQYAzoHCCMQ6gIQJzoHCC4Q6gIQJzoPCAAQigUQ6gIQtAIQQxgBOg8ILhCKBRDqAhC0AhBDGAE6EgguEIoFENQCEOoCELQCEEMYAToNCAAQjwEQ6gIQtAIYAjoNCC4QjwEQ6gIQtAIYAjoECCMQJzoICC4QigUQkQI6CwguEIoFENQCEJECOg4ILhCKBRCxAxDHARDRAzoLCAAQgAQQsQMQgwE6CwguEIAEELEDEIMBOgUIABCABDoICAAQgAQQsQM6CwgAEIoFELEDEIMBOgsILhCABBCxAxDUAjoICC4QgAQQsQM6DQgAEIoFELEDEIMBEEM6GwguEIoFELEDEIMBENQCEEMQ3AQQ3gQQ4AQYAzoNCC4QgAQQxwEQ0QMQCjoICAAQgAQQyQM6CAguELEDEIAEOhEILhCABBCxAxCDARDHARDRAzoHCC4QgAQQCkoECEEYAFC3OFipSGCKY2gCcAB4AIAB6AGIAeMJkgEFMC4yLjSYAQCgAQGwARTAAQHaAQYIARABGAHaAQYIAhABGAraAQYIAxABGBQ&sclient=gws-wiz-serp"><img src="hxh2.jpg"></a><br>hunter x hunter</td>
+    </tr>
+    <tr>
+        <td colspan="7"><h3 style="color:white">top in romance</h3></td>
+    </tr>
+    <tr class="airing">   <td><a href="https://www.google.com/search?q=fruits+basket&client=firefox-b-d&bih=731&biw=1536&hl=en&sxsrf=APwXEdd0FLIAxNc0I-EZ1FTREs1ax1mn-Q%3A1682164830766&ei=XsxDZPuWLrnLseMP1OeCOA&gs_ssp=eJzj4tVP1zc0TDIrsTDKqSoxYPTiTSsqzSwpVkhKLM5OLQEAjAIJzg&oq=fruit&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMhEILhCKBRCxAxCDARDUAhCRAjIRCC4QigUQsQMQgwEQ1AIQkQIyEQguEIoFELEDEIMBENQCEJECMgoIABCKBRCxAxBDMggIABCABBCxAzIFCAAQgAQyCAguEIAEELEDMggIABCABBCxAzILCC4QgAQQsQMQgwEyCAguEIAEELEDMhwILhCKBRCxAxCDARDUAhCRAhDcBBDdBBDgBBgCOgcILhDqAhAnOgcIIxDqAhAnOhIILhCKBRDUAhDqAhC0AhBDGAE6DwguEIoFEOoCELQCEEMYAToPCAAQigUQ6gIQtAIQQxgBOgQIIxAnOgoILhCKBRDUAhBDOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6BwguEIoFEEM6BwgAEIoFEEM6HAguEIoFELEDEIMBENQCEJECENwEEN4EEOAEGAJKBAhBGABQrwRY8Apg-BdoAXABeACAAfkBiAHVCJIBBTAuMS40mAEAoAEBsAEUwAEB2gEGCAEQARgB2gEGCAIQARgU&sclient=gws-wiz-serp"><img src="fruit basket.jpg"></a><br>Fruit Basket</td>
+        <td><a href="https://www.google.com/search?client=firefox-b-d&hl=en&sxsrf=APwXEdcoVGrXh-rLvRwsOVgsL7_kDJU8PQ:1682165568323&q=Before+Sunrise&stick=H4sIAAAAAAAAAONgFuLVT9c3NEyvNDLJiy_LVeLUz9U3ME5JSo_XkspOttJPy8zJBRPxxalFmanFViB28SJWPqfUtPyiVIXg0ryizOLUHayMAJR2zZtMAAAA&sa=X&ved=2ahUKEwj0z5yJu73-AhXeVmwGHScCA7cQgOQBegQIKBAE&biw=1536&bih=731&dpr=1.25"><img src="Before Triology.jpg"></a><br>Before Sunrise</td>
+        <td><a href="https://www.google.com/search?client=firefox-b-d&sa=X&hl=en&biw=1536&bih=731&sxsrf=APwXEdeUkix_xdIq2yBogMacamcznjkHhQ:1682165570526&q=Before+Midnight&stick=H4sIAAAAAAAAAONgFuLVT9c3NEyvNDLJiy_LVeLSz9U3yDXIiTdI0pLKTrbST8vMyQUT8cWpRZmpxVYgdvEiVn6n1LT8olQF38yUvMz0jJIdrIwT2BgBbY8jtlEAAAA&lei=Qs9DZILfH6O4seMPz9W0-A4"><img src="before midnight.jpg"></a><br>Before Midnight</td>
+        <td><a href="https://www.google.com/search?q=her&client=firefox-b-d&hl=en&biw=1536&bih=731&sxsrf=APwXEdeUkix_xdIq2yBogMacamcznjkHhQ%3A1682165570526&ei=Qs9DZILfH6O4seMPz9W0-A4&ved=0ahUKEwiCiKOKu73-AhUjXGwGHc8qDe8Q4dUDCA8&uact=5&oq=her&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCC4QigUQQzIKCC4QigUQ1AIQQzIKCC4QigUQsQMQQzIKCC4QigUQ1AIQQzIKCC4QigUQsQMQQzIHCC4QigUQQzIHCC4QigUQQzIKCC4QigUQsQMQQzIHCC4QigUQQzIKCC4QigUQ1AIQQzISCC4QigUQQxDcBBDeBBDgBBgCOgcIIxDqAhAnOgcILhDqAhAnOhIILhDUAhCKBRDqAhC0AhBDGAE6DwguEIoFEOoCELQCEEMYAToSCC4QigUQ1AIQ6gIQtAIQQxgBOg8IABCKBRDqAhC0AhBDGAE6BAguECc6BAgjECc6CwgAEIAEELEDEIMBOgsILhCABBCxAxCDAToFCAAQgAQ6BQguEIAEOg4ILhCABBCxAxCDARDUAjoNCC4Q3AQQ3gQQ4AQYAkoECEEYAFCfBFiwB2DeCGgBcAF4AIAB1QGIAacDkgEDMi0ymAEAoAEBsAEUwAEB2gEGCAEQARgB2gEGCAIQARgU&sclient=gws-wiz-serp"><img src="Her.jpg"></a><br>Her</td>
+        <td><a href="https://www.google.com/search?q=kaguya+sama&client=firefox-b-d&hl=en&biw=1536&bih=731&sxsrf=APwXEdcYrHvIzqRGndZVowepdBcF5byueg%3A1682165626185&ei=es9DZPXZCuidseMP0K6u4AI&ved=0ahUKEwj1_ueku73-AhXoTmwGHVCXCywQ4dUDCA8&uact=5&oq=kaguya+sama&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIQCC4QgwEQ1AIQsQMQigUQQzIQCC4QgwEQ1AIQsQMQigUQQzIHCAAQigUQQzIFCAAQgAQyEAgAEIAEEBQQhwIQsQMQgwEyBQgAEIAEMgUIABCABDILCAAQigUQsQMQgwEyBQgAEIAEMgUIABCABDIbCC4QgwEQ1AIQsQMQigUQQxDcBBDeBBDgBBgDOgoIABBHENYEELADOgoIABCKBRCwAxBDOg0IABDkAhDWBBCwAxgBOhIILhCKBRDUAhDIAxCwAxBDGAI6DQgAEIoFELEDEIMBEEM6CggAEIoFELEDEEM6GwguEIMBENQCELEDEIoFEEMQ3AQQ3QQQ4AQYAzoLCC4Q1AIQsQMQgAQ6FgguENQCELEDEIAEENwEEN4EEOAEGANKBAhBGABQ-AFYnBxgkSVoAXABeACAAc8BiAGOBpIBBTAuMi4ymAEAoAEByAESwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgU&sclient=gws-wiz-serp"><img src="Kaguya Sama.jpg"></a><br>Kaguya Sama:Love is War</td>
+        <td><a? href="https://www.google.com/search?q=your+name&client=firefox-b-d&hl=en&biw=1536&bih=731&sxsrf=APwXEdfo6UJyvjckqf420uJFFgIFmEblOQ%3A1682165632984&ei=gM9DZI3XO6e6seMP8PyA2AI&ved=0ahUKEwiNl4eou73-AhUnXWwGHXA-ACsQ4dUDCA8&uact=5&oq=your+name&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzINCC4QgwEQsQMQigUQQzILCC4QgwEQsQMQgAQyDQgAEIoFELEDEIMBEEMyEAguEIoFELEDEIMBENQCEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyCwgAEIAEELEDEIMBMgUIABCABDILCAAQigUQsQMQgwEyGAguEIMBELEDEIoFEEMQ3AQQ3gQQ4AQYAjoHCCMQ6gIQJzoHCC4Q6gIQJzoSCC4Q1AIQigUQ6gIQtAIQQxgBOg8IABCKBRDqAhC0AhBDGAE6DwguEIoFEOoCELQCEEMYAToSCC4QigUQ1AIQ6gIQtAIQQxgBOgQIIxAnOgcIABCKBRBDOhEILhCDARDHARCxAxDRAxCABDoKCC4QigUQ1AIQQzoKCC4Q1AIQigUQQzoTCC4QigUQsQMQgwEQxwEQ0QMQQzoNCC4QigUQsQMQgwEQQzoVCC4Q1AIQigUQQxDcBBDeBBDgBBgCOhAILhCDARDUAhCxAxCKBRBDSgQIQRgAUIwBWNsQYLQSaAFwAXgAgAHrAYgB7A6SAQUwLjIuN5gBAKABAbABFMABAdoBBggBEAEYAdoBBggCEAEYFA&sclient=gws-wiz-serp"><img src="your namw.jpg"></a><br>your name</td>
+    </tr>
+    </table>
+<footer>
+        <p>Managed By:Vansh Verma</p>
+        <p><a href="vvansh739@gmail.com">vvansh739@gmail.com</a></p>
+</footer>
+</main>
+</body>
+</html>
